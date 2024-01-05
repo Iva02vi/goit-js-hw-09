@@ -31,8 +31,7 @@ feedbackForm.addEventListener("submit", event => {
         email: emailValue.trim(),
         message: messageValue.trim(),
     }
-    localStorage.setItem(localStorageKey, JSON.stringify(formValues));
-    console.log(JSON.parse(localStorage.getItem(localStorageKey)));
+    console.log(formValues);
     localStorage.removeItem(localStorageKey);
     feedbackForm.reset();
 })
